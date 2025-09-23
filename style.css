@@ -10,7 +10,6 @@ body {
    Grid Background
 =========================== */
 
-
 /* ===========================
    Navbar Link with Underline
 =========================== */
@@ -128,7 +127,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 20px;
-  width: 120px;   /* lebih kecil supaya rapat */
+  width: 120px; /* lebih kecil supaya rapat */
   height: 120px;
   transition: all 0.3s ease;
 }
@@ -493,6 +492,30 @@ svg {
     gap: 4px;
   }
 }
+/* ==== Gambar Project ==== */
+#projects .card-glow img {
+  width: 100%;
+  height: 200px;         /* tinggi seragam */
+  object-fit: cover;     /* crop otomatis */
+  object-position: center;
+  border-radius: 10px;
+}
+
+/* Responsive Tabs */
+@media (max-width: 640px) {
+  .tab-btn {
+    flex-direction: column; /* ikon di atas teks */
+    padding: 8px 12px; /* lebih kecil */
+    font-size: 0.8rem; /* perkecil font */
+    gap: 4px; /* beri jarak kecil */
+    min-width: 80px; /* biar konsisten */
+    text-align: center;
+  }
+  .tab-btn i {
+    font-size: 1rem; /* kecilkan ikon */
+  }
+}
+
 /* Navbar fix untuk HP */
 @media (max-width: 768px) {
   nav {

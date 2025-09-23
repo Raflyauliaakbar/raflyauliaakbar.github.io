@@ -185,32 +185,45 @@
       </div>
 
       <!-- Projects -->
-      <div id="projects" class="tab-content grid md:grid-cols-3 gap-6">
-        <!-- Card -->
-        <div class="card-glow p-4 rounded-xl">
-          <img src="assets/img/apprun.png" class="rounded-lg mb-4" alt="Project 1" />
-          <h3 class="text-lg font-semibold text-white">Heart Disease</h3>
-          <p class="text-gray-400 text-sm mb-4">
-            Proyek ini bertujuan untuk memprediksi kemungkinan penyakit jantung berdasarkan data kesehatan pasien. Dengan memanfaatkan teknik Machine Learning seperti Logistic Regression dan Random Forest...
-          </p>
-          <a href="project-detail.html" class="btn-glow inline-flex items-center gap-2 px-5 py-2 rounded-lg"> Details <i class="fas fa-arrow-right"></i> </a>
-        </div>
-        <!-- Card -->
-        <div class="card-glow p-4 rounded-xl">
-          <img src="assets/img/deteksicuaca.png" class="rounded-lg mb-4" alt="Project 1" />
-          <h3 class="text-lg font-semibold text-white">Weather Detection</h3>
-          <p class="text-gray-400 text-sm mb-4">Aplikasi ini dirancang untuk memberikan informasi cuaca terkini seperti suhu, kelembapan, serta kondisi langit (cerah, berawan, hujan) dengan antarmuka sederhana...</p>
-          <a href="project-pbo.html" class="btn-glow inline-flex items-center gap-2 px-5 py-2 rounded-lg"> Details <i class="fas fa-arrow-right"></i> </a>
-        </div>
-        <!-- Card -->
-        <div class="card-glow p-4 rounded-xl">
-          <img src="assets/img/deerdetection.png" class="rounded-lg mb-4" alt="Project 1" />
-          <h3 class="text-lg font-semibold text-white">Deer Detection</h3>
-          <p class="text-gray-400 text-sm mb-4">Project Deteksi Rusa adalah bagian dari repo Belajar-Computer-Vision yang bertujuan untuk mendeteksi keberadaan rusa dalam gambar menggunakan teknik Computer Vision dan Deep Learning..</p>
-          <a href="project-rusa.html" class="btn-glow inline-flex items-center gap-2 px-5 py-2 rounded-lg"> Details <i class="fas fa-arrow-right"></i> </a>
+      <div id="projects" class="tab-content">
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="card-glow p-4 rounded-xl">
+            <img src="assets/img/project/apprun.png" class="rounded-lg mb-4" alt="Project 1" />
+            <h3 class="text-lg font-semibold text-white">Heart Disease</h3>
+            <p class="text-gray-400 text-sm mb-4">Proyek ini bertujuan ...</p>
+            <a href="project-detail.html" class="btn-glow inline-flex items-center gap-2 px-5 py-2 rounded-lg"> Details <i class="fas fa-arrow-right"></i> </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-glow p-4 rounded-xl">
+            <img src="assets/img/project/deteksicuaca.png" class="rounded-lg mb-4" alt="Project 2" />
+            <h3 class="text-lg font-semibold text-white">Weather Detection</h3>
+            <p class="text-gray-400 text-sm mb-4">Aplikasi ini dirancang ...</p>
+            <a href="project-pbo.html" class="btn-glow inline-flex items-center gap-2 px-5 py-2 rounded-lg"> Details <i class="fas fa-arrow-right"></i> </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card-glow p-4 rounded-xl">
+            <img src="assets/img/project/deerdetection.png" class="rounded-lg mb-4" alt="Project 3" />
+            <h3 class="text-lg font-semibold text-white">Deer Detection</h3>
+            <p class="text-gray-400 text-sm mb-4">Project Deteksi Rusa ...</p>
+            <a href="project-rusa.html" class="btn-glow inline-flex items-center gap-2 px-5 py-2 rounded-lg"> Details <i class="fas fa-arrow-right"></i> </a>
+          </div>
+
+          <!-- Card 4 (hidden by default) -->
+          <div class="card-glow p-4 rounded-xl extra hidden">
+            <img src="assets/img/project4.png" class="rounded-lg mb-4" alt="Project 4" />
+            <h3 class="text-lg font-semibold text-white">Another Project</h3>
+            <p class="text-gray-400 text-sm mb-4">Deskripsi project ke-4 ...</p>
+            <a href="#" class="btn-glow inline-flex items-center gap-2 px-5 py-2 rounded-lg"> Details <i class="fas fa-arrow-right"></i> </a>
+          </div>
         </div>
 
-        <!-- Tambahkan project lain sesuai kebutuhan -->
+        <!-- Show More Button (⛔️ harus di luar grid) -->
+        <div class="text-center mt-6">
+          <button id="showMoreProjects" class="btn-glow">Show More</button>
+        </div>
       </div>
 
       <!-- Certificates -->
@@ -218,28 +231,40 @@
         <div class="grid md:grid-cols-3 gap-6" id="certificateGrid">
           <!-- Sertifikat otomatis ditampilkan -->
           <div class="cert-card">
-            <img src="assets/img/Dicoding Belajar AI_page-0001.jpg" alt="Certificate 1" class="cert-img" />
+            <img src="assets/img/sertif/Data Visualization with Microsoft Excel.jpg" alt="Certificate 1" class="cert-img" />
           </div>
           <div class="cert-card">
-            <img src="assets/img/Dicoding Belajar Dasar Dev web_page-0001.jpg" alt="Certificate 2" class="cert-img" />
+            <img src="assets/img/sertif/Dicoding Belajar AI.jpg" alt="Certificate 2" class="cert-img" />
           </div>
           <div class="cert-card">
-            <img src="assets/img/Dicoding Belajar front-end_page-0001.jpg" alt="Certificate 3" class="cert-img" />
+            <img src="assets/img/sertif/Dicoding Belajar Dasar Dev.jpg" alt="Certificate 3" class="cert-img" />
           </div>
           <div class="cert-card">
-            <img src="assets/img/Dicoding Belajar JavaScript_page-0001.jpg" alt="Certificate 4" class="cert-img" />
+            <img src="assets/img/sertif/Dicoding Belajar front end.jpg" alt="Certificate 4" class="cert-img" />
           </div>
           <div class="cert-card">
-            <img src="assets/img/M.RAFLY AULIA AKBAR - E-Certif SC Data Visualization with Microsoft Excel MySkill_page-0001.jpg" alt="Certificate 5" class="cert-img" />
+            <img src="assets/img/sertif/Dicoding Belajar JavaScript.jpg" alt="Certificate 5" class="cert-img" />
           </div>
           <div class="cert-card">
-            <img src="assets/img/SERTIFIKAT-2210010574_3_page-0001.jpg" alt="Certificate 6" class="cert-img" />
+            <img src="assets/img/sertif/PRAKTIKUM DATA SCIENCE_page-0001.jpg" alt="Certificate 6" class="cert-img" />
           </div>
           <div class="cert-card hidden extra">
-            <img src="assets/img/SERTIFIKAT-2210010574_page-0001.jpg" alt="Certificate 7" class="cert-img" />
+            <img src="assets/img/sertif/PRAKTIKUM DESAIN GRAFIS_page-0001.jpg" alt="Certificate 7" class="cert-img" />
           </div>
           <div class="cert-card hidden extra">
-            <img src="assets/img/Sertifikat_M.RAFLY AULIA AKBAR_Junior Web Developer.jpg" alt="Certificate 8" class="cert-img" />
+            <img src="assets/img/sertif/PRAKTIKUM PEMROGRAMAN JAVA_page-0001.jpg" alt="Certificate 8" class="cert-img" />
+          </div>
+          <div class="cert-card hidden extra">
+            <img src="assets/img/sertif/PRAKTIKUM PEMROGRAMAN WEB 2_page-0001.jpg" alt="Certificate 9" class="cert-img" />
+          </div>
+          <div class="cert-card hidden extra">
+            <img src="assets/img/sertif/SERTIFIKAT-2210010574_page-0001.jpg" alt="Certificate 10" class="cert-img" />
+          </div>
+          <div class="cert-card hidden extra">
+            <img src="assets/img/sertif/Sertifikat_M.RAFLY AULIA AKBAR_Junior Web Developer.jpg" alt="Certificate 11" class="cert-img" />
+          </div>
+          <div class="cert-card hidden extra">
+            <img src="assets/img/sertif/Beginner Flutter.jpg" alt="Certificate 11" class="cert-img" />
           </div>
         </div>
 
@@ -264,6 +289,10 @@
             <p>HTML</p>
           </div>
           <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            <p>CSS</p>
+          </div>
+          <div class="tech-card">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
             <p>JavaScript</p>
           </div>
@@ -282,6 +311,10 @@
           <div class="tech-card">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
             <p>Bootstrap</p>
+          </div>
+          <div class="tech-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+            <p>MySQL</p>
           </div>
         </div>
       </div>

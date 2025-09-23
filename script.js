@@ -180,6 +180,22 @@ if (showMoreBtn) {
   });
 }
 
+// === Show More Projects ===
+const showMoreProjectsBtn = document.getElementById("showMoreProjects");
+const projectsGrid = document.querySelector("#projects");
+const extraProjects = projectsGrid ? projectsGrid.querySelectorAll(".extra") : [];
+
+if (extraProjects.length > 0 && showMoreProjectsBtn) {
+  showMoreProjectsBtn.addEventListener("click", () => {
+    extraProjects.forEach((proj) => proj.classList.toggle("hidden"));
+    showMoreProjectsBtn.textContent =
+      showMoreProjectsBtn.textContent === "Show More" ? "Show Less" : "Show More";
+  });
+} else if (showMoreProjectsBtn) {
+  // sembunyikan tombol jika tidak ada project lebih dari 3
+  showMoreProjectsBtn.style.display = "none";
+}
+
 // ===============================
 // Modal Certificates with Animation
 // ===============================
