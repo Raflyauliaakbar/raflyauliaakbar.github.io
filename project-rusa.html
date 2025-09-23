@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/img/logo.jpg" />
+    <title>Deteksi Rusa - Detail Project</title>
+    <link rel="stylesheet" href="project-detail.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="project-detail">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html#portfolio" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back</a>
+        <span> / Projects / <b>Deteksi Rusa</b></span>
+      </div>
+
+      <!-- Header -->
+      <div class="project-header">
+        <!-- Bagian teks -->
+        <div class="project-text">
+          <h1 class="gradient-title">Deteksi Rusa</h1>
+          <p>
+            Project <b>Deteksi Rusa</b> adalah bagian dari repo <i>Belajar-Computer-Vision</i>
+            yang bertujuan untuk mendeteksi keberadaan rusa dalam gambar menggunakan teknik
+            <b>Computer Vision</b> dan <b>Deep Learning</b>. Proyek ini menggunakan dataset khusus yang dibuat dengan anotasi bounding box dan dilatih menggunakan algoritma deteksi objek modern seperti YOLO.
+          </p>
+
+          <!-- Stats -->
+          <div class="project-stats">
+            <div class="stat-box">
+              <i class="fa-solid fa-database"></i>
+              <h3>1</h3>
+              <p>Dataset</p>
+            </div>
+            <div class="stat-box">
+              <i class="fa-solid fa-microchip"></i>
+              <h3>1</h3>
+              <p>Model</p>
+            </div>
+            <div class="stat-box">
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>3</h3>
+              <p>Evaluasi</p>
+            </div>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="project-actions">
+            <a href="https://github.com/Raflyauliaakbar/Belajar-Computer-Vision/tree/main/Proyek%20Deteksi%20Rusa-UAS_Citra_6B" target="_blank" class="btn github"> <i class="fa-brands fa-github"></i> Github </a>
+          </div>
+
+          <!-- Technologies Used -->
+          <div class="tech-used">
+            <h4><i class="fa-solid fa-code"></i> Technologies Used</h4>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">YOLO</span>
+            <span class="tech-tag">Roboflow</span>
+          </div>
+        </div>
+
+        <!-- Bagian kanan: gambar + key features -->
+        <div class="project-right">
+          <div class="project-image">
+            <img src="assets/img/deerdetection.png" alt="Deteksi Rusa Model" />
+          </div>
+
+          <div class="project-features">
+            <h3><i class="fa-solid fa-star"></i> Key Features</h3>
+            <ul>
+              <li>Menggunakan dataset hasil anotasi gambar rusa dengan bounding box.</li>
+              <li>Model YOLO digunakan untuk deteksi objek secara real-time.</li>
+              <li>Visualisasi hasil deteksi langsung pada gambar input.</li>
+              <li>Evaluasi performa menggunakan metrik mAP, precision, dan recall.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-transparent text-center py-4 border-t border-gray-700">
+      <p class="text-sm text-gray-400">© 2025 <span class="text-purple-400 font-semibold">Raflyauliaakbar</span>. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
