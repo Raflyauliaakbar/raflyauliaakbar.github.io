@@ -111,11 +111,14 @@ body {
 /* Grid wrapper */
 .techstack-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px; 
-  margin-top: 2rem;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2rem;
+  align-items: center;
+  max-width: 648px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Card */
@@ -533,5 +536,6 @@ svg {
     padding-top: 8rem !important; /* biar teks Frontend Developer turun */
   }
 }
+
 
 
