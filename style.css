@@ -111,10 +111,11 @@ body {
 /* Grid wrapper */
 .techstack-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* fleksibel */
+  grid-template-columns: repeat(5, 1fr); /* fleksibel */
   gap: 12px; /* atur jarak antar card */
   justify-items: center; /* biar center */
   margin-top: 2rem;
+  align-items: center;
 }
 
 /* Card */
@@ -532,3 +533,4 @@ svg {
     padding-top: 8rem !important; /* biar teks Frontend Developer turun */
   }
 }
+
