@@ -21,7 +21,7 @@ if (burger && mobileMenu) {
 // Typing effect
 // ===============================
 var typed = new Typed("#typed", {
-  strings: ["Teknik Informatika","UNISKA(Universitas Islam Kalimantan)"],
+  strings: ["Teknik Informatika","UNISKA (Universitas Islam Kalimantan)"],
   typeSpeed: 80,
   backSpeed: 50,
   loop: true,
@@ -233,4 +233,5 @@ if (certModal) {
     if (e.target === certModal) closeCertModal();
   });
 }
+
 
