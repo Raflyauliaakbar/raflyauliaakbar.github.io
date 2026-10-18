@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/img/logo.jpg" />
+    <title>Deteksi Penyakit Daun Jeruk Siam - Detail Project</title>
+    <link rel="stylesheet" href="project-detail.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#0f172a] text-white font-sans">
+    <section class="project-detail py-12 px-6 max-w-6xl mx-auto">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb mb-8">
+        <a href="index.html#portfolio" class="back-btn text-purple-400 hover:text-purple-300 transition-colors inline-flex items-center gap-2">
+          <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <span class="text-gray-400"> / Projects / <b class="text-white">Deteksi Penyakit Daun Jeruk Siam (YOLOv8)</b></span>
+      </div>
+
+      <!-- Header -->
+      <div class="project-header grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <!-- Bagian teks (Kiri) -->
+        <div class="project-text">
+          <h1 class="gradient-title text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
+            Sistem Deteksi Penyakit Daun Jeruk Siam Menggunakan YOLOv8 Berbasis Web
+          </h1>
+          <p class="text-gray-300 leading-relaxed text-sm md:text-base mb-6">
+            Proyek ini merupakan sistem cerdas berbasis web yang dikembangkan untuk mempermudah identifikasi dan diagnosa dini penyakit pada daun jeruk siam secara otomatis di fasilitas pembibitan <b>Rumah Kasa Desa Badandan, Kabupaten Barito Kuala</b>[cite: 179]. Sistem ini dirancang untuk menggantikan proses pengamatan visual manual yang rentan terhadap subjektivitas dan kesalahan (<i>false inspection</i>)[cite: 179]. Menggunakan arsitektur <i>Deep Learning</i> <b>YOLOv8</b>[cite: 179], sistem mampu mengklasifikasikan dan melokalisasi 6 (enam) kelas kondisi daun secara akurat (Canker, HLB/CVPD, Greasy Spot, Melanose, Sooty Mold, dan Healthy)[cite: 179], dilengkapi transparansi <i>Explainable AI</i> (XAI) berupa *Heatmap*[cite: 179].
+          </p>
+
+          <!-- Stats -->
+          <div class="project-stats grid grid-cols-3 gap-4 mb-6">
+            <div class="stat-box bg-[#1e293b]/60 border border-gray-700/60 p-4 rounded-xl text-center">
+              <i class="fa-solid fa-brain text-purple-400 text-xl mb-2"></i>
+              <h3 class="text-xl font-bold text-white">93.9%</h3>
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Peak mAP@50</p>
+            </div>
+            <div class="stat-box bg-[#1e293b]/60 border border-gray-700/60 p-4 rounded-xl text-center">
+              <i class="fa-solid fa-list-check text-purple-400 text-xl mb-2"></i>
+              <h3 class="text-xl font-bold text-white">6</h3>
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Kelas Penyakit</p>
+            </div>
+            <div class="stat-box bg-[#1e293b]/60 border border-gray-700/60 p-4 rounded-xl text-center">
+              <i class="fa-solid fa-file-pdf text-purple-400 text-xl mb-2"></i>
+              <h3 class="text-xl font-bold text-white">PDF</h3>
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Report Export</p>
+            </div>
+          </div>
+
+          <!-- Github Repository Link -->
+          <div class="project-actions mb-6">
+            <a href="https://github.com/Raflyauliaakbar/aplikasi-deteksi-penyakit-daun" target="_blank" class="btn-glow inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium transition-all shadow-lg shadow-purple-600/30">
+              <i class="fa-brands fa-github text-lg"></i> View GitHub Repository
+            </a>
+          </div>
+
+          <!-- Technologies Used -->
+          <div class="tech-used flex flex-wrap gap-2 items-center">
+            <h4 class="w-full text-sm font-semibold text-gray-400 mb-1"><i class="fa-solid fa-code"></i> Technologies Used</h4>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">Python (Flask API)</span>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">YOLOv8 (Ultralytics)</span>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">PHP Native</span>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">OpenCV</span>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">MySQL</span>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">Bootstrap / Tailwind</span>
+          </div>
+        </div>
+
+        <!-- Bagian Kanan: Slideshow Gambar Otomatis & Manual + Key Features -->
+        <div class="project-right flex flex-col gap-6">
+          
+          <!-- Image Slider / Carousel Container -->
+          <div class="relative w-full overflow-hidden rounded-2xl border border-purple-500/30 shadow-2xl bg-[#1e293b]">
+            <!-- Wrapper Slide Images -->
+            <div id="sliderWrapper" class="flex transition-transform duration-500 ease-in-out">
+              <!-- Slide 1: Tampilan Dasbor / Halaman Utama -->
+              <div class="min-w-full flex flex-col items-center justify-center bg-black/40">
+                <img src="assets/img/1md.png" alt="Dashboard Aplikasi" class="w-full h-[280px] md:h-[320px] object-contain p-2" />
+                <div class="w-full bg-[#0f172a]/90 py-2 px-4 text-center text-xs text-gray-300 border-t border-gray-800">
+                  Antarmuka Dashboard & Monitoring Riwayat Deteksi
+                </div>
+              </div>
+              <!-- Slide 2: Halaman Deteksi & Snapshot Kamera -->
+              <div class="min-w-full flex flex-col items-center justify-center bg-black/40">
+                <img src="assets/img/2i.png" alt="Modul Deteksi Kamera" class="w-full h-[280px] md:h-[320px] object-contain p-2" />
+                <div class="w-full bg-[#0f172a]/90 py-2 px-4 text-center text-xs text-gray-300 border-t border-gray-800">
+                  Fitur Input Citra (Snapshot Kamera & Unggah Galeri)
+                </div>
+              </div>
+              <!-- Slide 3: Hasil Bounding Box & Heatmap XAI -->
+              <div class="min-w-full flex flex-col items-center justify-center bg-black/40">
+                <img src="assets/img/3.png" alt="Hasil Bounding Box dan Heatmap" class="w-full h-[280px] md:h-[320px] object-contain p-2" />
+                <div class="w-full bg-[#0f172a]/90 py-2 px-4 text-center text-xs text-gray-300 border-t border-gray-800">
+                  Hasil Inferensi YOLOv8 & Visualisasi Heatmap (XAI)
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol Navigasi Manual (Kiri & Kanan) -->
+            <button onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-purple-600 transition-colors">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-purple-600 transition-colors">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Indikator Titik (Dots) -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2">
+              <span onclick="currentSlide(0)" class="w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all dot active-dot"></span>
+              <span onclick="currentSlide(1)" class="w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all dot"></span>
+              <span onclick="currentSlide(2)" class="w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all dot"></span>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div class="project-features bg-[#1e293b]/50 border border-gray-700/60 p-6 rounded-2xl">
+            <h3 class="text-base font-semibold text-white mb-3"><i class="fa-solid fa-star text-purple-400 mr-2"></i><b>Key Features</b></h3>
+            <ul class="list-disc list-inside space-y-2 text-sm text-gray-300">
+              <li><b>Multi-Method Input:</b> Mendukung pengambilan gambar langsung melalui kamera perangkat (*snapshot*) dengan *Adaptive Confidence Threshold* (`conf=0.50`) maupun unggahan galeri (`conf=0.40`)[cite: 179].</li>
+              <li><b>Deteksi Objek YOLOv8:</b> Inferensi cepat untuk menampilkan *Bounding Box*, label kelas, dan tingkat *Confidence Score*[cite: 179].</li>
+              <li><b>Visualisasi XAI (Heatmap):</b> Menampilkan peta panas berbasis *Otsu Thresholding* pada area lesi daun guna mentransparansikan alasan prediksi AI[cite: 179].</li>
+              <li><b>Panduan Penanganan Otomatis:</b> Menyajikan deskripsi gejala visual serta solusi mitigasi pestisida secara instan berdasarkan hasil diagnosa[cite: 179].</li>
+              <li><b>Manajemen Pengguna (RBAC) & Laporan PDF:</b> Pembagian hak akses antara Admin dan Petugas, serta fitur ekspor laporan riwayat ke format PDF[cite: 179].</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-transparent text-center py-6 border-t border-gray-800 mt-12">
+      <p class="text-sm text-gray-400">© 2026 <span class="text-purple-400 font-semibold">Raflyauliaakbar</span>. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script JavaScript untuk Slider Otomatis & Manual -->
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll("#sliderWrapper > div");
+      const dots = document.querySelectorAll(".dot");
+      const totalSlides = slides.length;
+
+      function updateSlider() {
+        const wrapper = document.getElementById("sliderWrapper");
+        wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add("bg-purple-500", "w-6");
+            dot.classList.remove("bg-white/50");
+          } else {
+            dot.classList.remove("bg-purple-500", "w-6");
+            dot.classList.add("bg-white/50");
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+      }
+
+      function currentSlide(index) {
+        currentIndex = index;
+        updateSlider();
+      }
+
+      // Geser otomatis setiap 4 detik
+      let autoSlide = setInterval(nextSlide, 4000);
+
+      // Berhenti saat kursor diarahkan ke slider (pause on hover)
+      const sliderContainer = document.querySelector("#sliderWrapper").parentElement;
+      sliderContainer.addEventListener("mouseenter", () => clearInterval(autoSlide));
+      sliderContainer.addEventListener("mouseleave", () => {
+        autoSlide = setInterval(nextSlide, 4000);
+      });
+
+      // Inisialisasi awal dot
+      updateSlider();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/img/logo.jpg" />
+    <title>SIMRS & Monitoring Aset Medis - Detail Project</title>
+    <link rel="stylesheet" href="project-detail.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#0f172a] text-white font-sans">
+    <section class="project-detail py-12 px-6 max-w-6xl mx-auto">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb mb-8">
+        <a href="index.html#portfolio" class="back-btn text-purple-400 hover:text-purple-300 transition-colors inline-flex items-center gap-2">
+          <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <span class="text-gray-400"> / Projects / <b class="text-white">SIMRS & Monitoring Aset Medis</b></span>
+      </div>
+
+      <!-- Header -->
+      <div class="project-header grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <!-- Bagian teks (Kiri) -->
+        <div class="project-text">
+          <h1 class="gradient-title text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
+            SIMRS & Monitoring Aset Medis RSU Syifa Medika
+          </h1>
+          <p class="text-gray-300 leading-relaxed text-sm md:text-base mb-6">
+            Sistem informasi berbasis web yang dikembangkan selama kegiatan Praktik Kerja Lapangan (PKL) di <b>RSU Syifa Medika Banjarbaru</b>[cite: 89]. Sistem ini dirancang untuk mengintegrasikan <b>pelaporan kerusakan fasilitas & AC secara insidental</b>, manajemen pemeliharaan rutin, kalibrasi alat medis, pemantauan parameter air bersih secara berkala[cite: 103], serta pengelolaan inventaris suku cadang dan tabung oksigen secara terpusat untuk mendukung efisiensi operasional rumah sakit[cite: 114].
+          </p>
+
+          <!-- Stats -->
+          <div class="project-stats grid grid-cols-3 gap-4 mb-6">
+            <div class="stat-box bg-[#1e293b]/60 border border-gray-700/60 p-4 rounded-xl text-center">
+              <i class="fa-solid fa-users text-purple-400 text-xl mb-2"></i>
+              <h3 class="text-xl font-bold text-white">7</h3>
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Aktor / Role</p>
+            </div>
+            <div class="stat-box bg-[#1e293b]/60 border border-gray-700/60 p-4 rounded-xl text-center">
+              <i class="fa-solid fa-boxes-stacked text-purple-400 text-xl mb-2"></i>
+              <h3 class="text-xl font-bold text-white">9</h3>
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Tabel Database</p>
+            </div>
+            <div class="stat-box bg-[#1e293b]/60 border border-gray-700/60 p-4 rounded-xl text-center">
+              <i class="fa-solid fa-file-pdf text-purple-400 text-xl mb-2"></i>
+              <h3 class="text-xl font-bold text-white">PDF</h3>
+              <p class="text-xs text-gray-400 uppercase tracking-wide">Report Export</p>
+            </div>
+          </div>
+
+          <!-- Notice / Privacy Badge (Pengganti Github karena Private Company Project) -->
+          <div class="project-actions mb-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-sm">
+              <i class="fa-solid fa-lock"></i>
+              <span>Source code bersifat <b>Privasi Perusahaan (Closed Source)</b>. Hanya menampilkan antarmuka aplikasi.</span>
+            </div>
+          </div>
+
+          <!-- Technologies Used -->
+          <div class="tech-used flex flex-wrap gap-2 items-center">
+            <h4 class="w-full text-sm font-semibold text-gray-400 mb-1"><i class="fa-solid fa-code"></i> Technologies Used</h4>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">PHP (Laravel)</span>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">MySQL</span>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">Tailwind CSS</span>
+            <span class="tech-tag px-3 py-1 bg-[#1e293b] border border-gray-700 rounded-full text-xs text-gray-300">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Bagian Kanan: Slideshow Gambar Otomatis & Manual + Key Features -->
+        <div class="project-right flex flex-col gap-6">
+          
+          <!-- Image Slider / Carousel Container -->
+          <div class="relative w-full overflow-hidden rounded-2xl border border-purple-500/30 shadow-2xl bg-[#1e293b]">
+            <!-- Wrapper Slide Images -->
+            <div id="sliderWrapper" class="flex transition-transform duration-500 ease-in-out">
+              <!-- Slide 1: Login / Dashboard -->
+              <div class="min-w-full flex flex-col items-center justify-center bg-black/40">
+                <img src="assets/img/1k.png" alt="Dashboard SIMRS" class="w-full h-[280px] md:h-[320px] object-contain p-2" />
+                <div class="w-full bg-[#0f172a]/90 py-2 px-4 text-center text-xs text-gray-300 border-t border-gray-800">
+                  Antarmuka Dashboard Kepala Teknisi
+                </div>
+              </div>
+              <!-- Slide 2: Form Pelaporan -->
+              <div class="min-w-full flex flex-col items-center justify-center bg-black/40">
+                <img src="assets/img/2p.png" alt="Form Pelaporan Kerusakan" class="w-full h-[280px] md:h-[320px] object-contain p-2" />
+                <div class="w-full bg-[#0f172a]/90 py-2 px-4 text-center text-xs text-gray-300 border-t border-gray-800">
+                  Formulir Pelaporan Kerusakan & Pengajuan Oksigen
+                </div>
+              </div>
+              <!-- Slide 3: Lembar Kerja Maintenance -->
+              <div class="min-w-full flex flex-col items-center justify-center bg-black/40">
+                <img src="assets/img/3m.png" alt="Maintenance & Kalibrasi" class="w-full h-[280px] md:h-[320px] object-contain p-2" />
+                <div class="w-full bg-[#0f172a]/90 py-2 px-4 text-center text-xs text-gray-300 border-t border-gray-800">
+                  Lembar Kerja Perawatan Aset & Kalibrasi Alat Medis
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol Navigasi Manual (Kiri & Kanan) -->
+            <button onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-purple-600 transition-colors">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-purple-600 transition-colors">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Indikator Titik (Dots) -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2">
+              <span onclick="currentSlide(0)" class="w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all dot active-dot"></span>
+              <span onclick="currentSlide(1)" class="w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all dot"></span>
+              <span onclick="currentSlide(2)" class="w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all dot"></span>
+            </div>
+          </div>
+
+          <!-- Key Features -->
+          <div class="project-features bg-[#1e293b]/50 border border-gray-700/60 p-6 rounded-2xl">
+            <h3><i class="fa-solid fa-star text-purple-400 mr-2"></i><b>Key Features</b></h3>
+            <ul class="list-disc list-inside space-y-2 text-sm text-gray-300 mt-3">
+              <li>Manajemen hak akses bertingkat untuk 7 aktor operasional (Pelapor, Teknisi Umum/AC/Elektromedis, Petugas Inventaris, Kepala Teknisi, dan Direktur)[cite: 103].</li>
+              <li>Otomatisasi pemotongan stok suku cadang dan logistik tabung oksigen secara *real-time* berdasarkan input pengerjaan teknisi[cite: 127].</li>
+              <li>Pencatatan logbook pemantauan kualitas air bersih secara periodik berkala setiap 4 jam[cite: 111].</li>
+              <li>Fitur cetak laporan formal berbasis format dokumen PDF untuk evaluasi kinerja bulanan dan tahunan oleh jajaran direksi[cite: 150].</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-transparent text-center py-6 border-t border-gray-800 mt-12">
+      <p class="text-sm text-gray-400">© 2026 <span class="text-purple-400 font-semibold">Raflyauliaakbar</span>. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script JavaScript untuk Slider Otomatis & Manual -->
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll("#sliderWrapper > div");
+      const dots = document.querySelectorAll(".dot");
+      const totalSlides = slides.length;
+
+      function updateSlider() {
+        const wrapper = document.getElementById("sliderWrapper");
+        wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add("bg-purple-500", "w-6");
+            dot.classList.remove("bg-white/50");
+          } else {
+            dot.classList.remove("bg-purple-500", "w-6");
+            dot.classList.add("bg-white/50");
+          }
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+      }
+
+      function currentSlide(index) {
+        currentIndex = index;
+        updateSlider();
+      }
+
+      // Geser otomatis setiap 4 detik
+      let autoSlide = setInterval(nextSlide, 4000);
+
+      // Berhenti saat kursor diarahkan ke slider (pause on hover)
+      const sliderContainer = document.querySelector("#sliderWrapper").parentElement;
+      sliderContainer.addEventListener("mouseenter", () => clearInterval(autoSlide));
+      sliderContainer.addEventListener("mouseleave", () => {
+        autoSlide = setInterval(nextSlide, 4000);
+      });
+
+      // Inisialisasi awal dot
+      updateSlider();
+    </script>
+  </body>
+</html>
